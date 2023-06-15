@@ -1,0 +1,108 @@
+body {
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    
+
+}
+
+.container {
+    height: 450px;
+    width: 350px;
+    border-radius: 20px;
+}
+
+.container img {
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+
+}
+
+.circle {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: antiquewhite;
+    text-align: center;
+    position: relative;
+    display: inline-block;
+    right: -250px;
+    margin-right: 5px;
+    transform: rotateY(0px);
+    transition: 0.35s;
+    opacity: 0;
+    cursor: pointer;
+}
+
+#dot {
+    line-height: 30px;
+}
+
+#up {
+    line-height: 27px;
+}
+
+.elliptical {
+    background-color: antiquewhite;
+    text-align: center;
+    width: 135px;
+    height: 30px;
+    border-radius: 60px;
+    line-height: 30px;
+    position: relative;
+    left: 8px;
+    transform: translateY(-30px);
+    transition: 0.35s;
+    cursor: pointer;
+    opacity: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 0.9rem;
+}
+
+.elliptical i {
+    margin-left: 5px;
+}
+
+.save {
+    background-color: red;
+    color: white;
+    text-align: center;
+    width: 90px;
+    height: 45px;
+    border-radius: 60px;
+    line-height: 41px;
+    position: absolute;
+    left: 250px;
+    font-size: 1.2rem;
+    transform: translateY(-50px);
+    transition: 0.35s;
+    cursor: pointer;
+    opacity: 0;
+    z-index: 3;
+}
+
+.container:hover {
+    -webkit-box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.39);
+    box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.39);
+}
+
+.container:hover .save {
+    transform: translateY(10px);
+    opacity: 1;
+}
+
+.container:hover .circle {
+    transform: translateY(-40px);
+    opacity: 1;
+}
+
+.container:hover .elliptical {
+    transform: translateY(-70px);
+    opacity: 1;
+}
+
+.container:hover .img {
+    filter: brightness(0.7);
+}
